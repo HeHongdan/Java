@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register_receiver"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hhd.java.A_2_11_0104.RegisterReceiverActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:text="动态注册广播"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:id="@+id/button"
+        android:onClick="registerClick"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="动态注册广播： \n  \n private RegisterReceiver registerReceiver = new RegisterReceiver(); \n IntentFilter filter = new IntentFilter(); \n filter.addAction(“com.hhd.action.REGISTER_RECEIVER”); \n registerReceiver(registerReceiver,filter);"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:id="@+id/textView" />
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_echo_client"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hhd.java.J_1_20_0205.EchoClientActivity">
+
+    <Button
+        android:text="连接"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="connectionClick"
+        android:id="@+id/button13"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:text="控制台调试（Eclipse）：
+         \n\n\n Socket（TCP）：
+         \n 服务器端步骤： \n 1、创建服务Socket（带有端口号） \n 2、创建Socket并接收连接（用到ServerSocket） \n 3、创建输入流（用到socket） \n 4-、创建缓冲读取流（用到输入流），读取一行方式读取 \n 5、创建输出流（用到socket） \n 6-、创建打印流（用到输出流），向客户端打印 \n 7、关闭输出流 \n 8、关闭输入流
+         \n\n 客户端步骤： \n 1、创建Socket并连接服务器（对应服务器地址+端口） \n 2、创建输出流（用到socket） \n 3、创建输入流（用到socket） \n 4-、创建打印流（用到输出流），向服务器端打印 \n 5-、创建缓冲读取流（用到输入流），读取一行方式读取服务器信息 \n 6、关闭输出流 \n 7、关闭输入流
+
+         \n\n\n Socket（UDP）：
+         \n 服务器端步骤： \n 1、创建（需发送）的数据，并转换成字节数组 \n 2、创建数据包报（配置要发送的客户端信息），并封装数据 \n 3、创建DatagramSocket（配置服务器端信息） \n 4、send发送封装数据报（用DatagramSocket去发DatagramPacket）
+         \n\n 客户端步骤： \n 1、初始化接收长度 \n 2、创建数据包报DatagramPacket（配置需接收的数据） \n 3、创建DatagramSocket（配置相应服务器端口） \n 4、receive接收数据报（用DatagramSocket去接DatagramPacket） \n 5-、打印接收到数据 \n 6、关闭DatagramSocket
+
+         \n\n\n URL：
+         \n 客户端步骤： \n 1、创建URL \n 2、创建HttpURLConnection对象并建立连接（使用到url） \n 3、创建（缓冲）输入流（使用到连接） \n 4、创建（缓冲）输出流（使用到存储路径） \n 5、初始化接收长度 \n 6、判断文件大小并写入数据（使用到输出流） \n 7、关闭输出流 \n 8、关闭输入流
+
+         "
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    </ScrollView>
+</RelativeLayout>

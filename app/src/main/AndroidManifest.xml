@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hhd.java">
+
+    <!-- 地位权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 权限 -->
+    <!-- 打电话权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 粘性广播缓冲权限 -->
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+
+    <!-- Vitamio权限 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- 权限 -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 活动 -->
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Vitamio -->
+        <activity
+            android:name="io.vov.vitamio.activity.InitActivity"
+            android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".J_1_09_03.RecursionFactorial" />
+        <activity android:name=".J_1_09_0406.LinkedListActivity" />
+        <activity android:name=".J_1_16_01.ListActivity" />
+        <activity android:name=".J_1_16_0203.SetActivity" />
+        <activity android:name=".J_1_17_0103.MapActivity" />
+        <activity android:name=".A_2_08_0103.ActivityActivity" />
+        <activity android:name=".A_2_08_0405.PutExtraBundle" />
+        <activity android:name=".A_2_08_0405.ActivityA" />
+        <activity android:name=".A_2_08_0405.ActivityB" />
+        <activity android:name=".A_2_08_0405.ActivityC" />
+        <activity android:name=".A_2_08_06.ResultActivity" />
+        <activity android:name=".A_2_08_06.PhoneNumberList" />
+        <activity
+            android:name=".A_2_08_0708.ScreenOrientationChange"
+            android:configChanges="keyboardHidden|orientation" />
+        <!-- android:configChanges="keyboard|orientation|screenSize"/> -->
+        <activity android:name=".A_2_10_0407.BoundServiceActivity" />
+        <activity android:name=".A_2_17_0104.ContentProviderActivity" />
+        <activity android:name=".A_2_11_0104.BroadcastReceiverActivity" />
+        <activity android:name=".A_2_11_0104.RegisterReceiverActivity" />
+        <activity android:name=".A_2_11_0104.StickyBroadcastActivity" />
+        <activity android:name=".A_2_12_03.PopBackTaskActivity" />
+        <activity android:name=".A_2_12_03.FragmentActivity" />
+        <activity android:name=".J_1_20_0205.EchoClientActivity" />
+        <activity android:name=".A_2_15_0708.JsonActivity" />
+        <activity android:name=".J_1_18_0103.ThreadActivity" />
+        <activity android:name=".J_1_19_0104.MultipleThreadsActivity" />
+        <activity android:name=".J_1_06_07.Singleton" />
+        <activity android:name="._Deme.DemoActivity" />
+        <activity android:name="._Deme.GPSTime.GPSTimeActivity" />
+        <activity android:name="._Deme.EarphoneInterface.EarphoneInterfaceActivity" />
+        <!-- 活动 -->
+
+
+        <!-- 服务 -->
+        <service
+            android:name=".A_2_10_0407.BoundService"
+            android:enabled="true"
+            android:exported="true">
+
+            <!-- android:process="remote" -->
+        </service>
+        <!-- 服务 -->
+
+
+        <!-- 广播 -->
+        <receiver
+            android:name=".A_2_11_0104.NormalBroadcast"
+            android:enabled="true"
+            android:exported="true">
+
+            <!-- enabled：激活的；exported：访问出口 -->
+            <!-- 过滤 -->
+            <intent-filter>
+
+                <!-- priority：优先级 -->
+                <action android:name="com.hhd.action.NORMAL_BROADCAST" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".A_2_11_0104.OrderedBroadcast100"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="100">
+                <action android:name="com.hhd.action.ORDERED_BROADCAST" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".A_2_11_0104.OrderedBroadcast200"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="200">
+                <action android:name="com.hhd.action.ORDERED_BROADCAST" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="._Deme.EarphoneInterface.MediaButtonReceiver">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+        <!-- 广播 -->
+
+
+        <!-- 内容提供者 -->
+        <provider
+            android:name=".A_2_17_0104.HelloContentProvider"
+            android:authorities="com.hhd.java.a_2_17_0104.hellocontentprovider" />
+        <!-- 内容提供者 -->
+
+        <activity android:name="._Deme.HHDLogger.HHDLogActivity" />
+        <activity android:name="._Deme.CountDownTimer.CountDownTimerActivity" />
+        <activity android:name="._Deme.Recycler.RecyclerViewActivity"></activity>
+    </application>
+
+</manifest>

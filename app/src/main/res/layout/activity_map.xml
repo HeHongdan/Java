@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="com.hhd.java.J_1_16_01.ListActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="queryHashMapSize"
+                android:text="查询长度（HashMap）"
+                android:layout_below="@+id/button1"
+                android:layout_centerHorizontal="true" />
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/button9"
+                android:gravity="center"
+                android:hint="测试结果" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/textView"
+                android:gravity="center"
+                android:text="
+
+        Map：操作两个对象的集合（键值对），Key也可以是自定义对象
+        \n\n
+        HashMap：
+        \n* 1、线程不安全（不同步）
+        \n* 2、使用哈希表（hash）实现
+        \n* 3、键不能重复（如果键相同则覆盖原值）
+        \n* 4、（哈希表保存对象时）会根据Key的hashcode值对HashMap的容量（16）求余，决定该对象在数组的位置，如果该位置已有对象那就以链表结构来存储对象
+        \n* 5、每次扩充2倍
+        \n注：初始容量为16(数组)；加载因子为0.75（数组满75%需要重新扩充(又称哈希表重新散列)）；链表来实现Key和Value
+        \n\n
+
+        Hashtable：
+        \n* 1、线程安全（同步），效率低（有别于HashMap的地方）
+        \n* 2、实现方式和HashMap基本相同
+        \n* 3、初始容量为11，每次扩充2倍+1
+        \n\n
+
+        TreeMap：
+        \n* 1、二叉树数据结构实现（红黑树(平衡二叉树)）
+
+        \n\n
+        Iterator：遍历（迭代）
+
+        \n\n
+        Collection（List和Set父接口）与Collections（工具类）
+        \n\n
+        " />
+
+
+
+            <!--<Button-->
+            <!--android:id="@+id/button3"-->
+            <!--android:onClick="queryArrayList"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:text="查询元素（ArrayList）"-->
+            <!--android:layout_below="@+id/button2"-->
+            <!--android:layout_alignLeft="@+id/button2"-->
+            <!--android:layout_alignStart="@+id/button2" />-->
+
+
+            <Button
+                android:id="@+id/button5"
+                android:onClick="queryHashtableSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="查询长度（Hashtable）"
+                android:layout_below="@+id/button4"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/button7"
+                android:onClick="queryTreeMapSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="查询长度（TreeMap）"
+                android:layout_below="@+id/button6"
+                android:layout_centerHorizontal="true"  />
+
+            <Button
+                android:id="@+id/button8"
+                android:onClick="queryIterator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="迭代（Iterator）"
+                android:layout_below="@+id/button7"
+                android:layout_centerHorizontal="true"  />
+
+            <Button
+                android:id="@+id/button9"
+                android:onClick="hashCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="HashCode"
+                android:layout_below="@+id/button8"
+                android:layout_centerHorizontal="true"  />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="addHashMap"
+                android:text="添加（HashMap）"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp" />
+
+            <Button
+                android:id="@+id/button4"
+                android:onClick="addHashtable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="添加（Hashtable）"
+                android:layout_below="@+id/button2"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/button6"
+                android:onClick="addTreeMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="添加（TreeMap）"
+                android:layout_below="@+id/button5"
+                android:layout_centerHorizontal="true" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

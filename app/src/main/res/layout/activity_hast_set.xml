@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/button10"
+                android:gravity="center"
+                android:hint="测试结果" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/textView"
+                android:gravity="center"
+                android:text="
+                HashSet（基于HashMap实现）：
+                 \n* 1、值唯一性（不能重复）
+                 \n* 2、不保证迭代顺序
+                 \n* 3、不保证该顺序恒久不变
+                 \n添加对象元素时判断是否重复：1、先调用对象的hashCode方法求值，如果hash值在集合中不存在，那么可以添加该对象（不是重复的对象）2、如果hash值相同，还不能确定对象是否相同（因为不同的对象有可能产生相同的hashCode值），那么需要再调用equals方法来验证3、equals方法返回true（表示两个对象相同），返回false（表示两个对象不同），那么可以添加该对象（不是重复的对象）
+                 \n如果需要在程序中有这样的需求：两个对象的值相同就认为两个对象是同一个对象（前提是使用HashSet来存储）这时就需要重写对象（类）中的hashCode方法和equals方法
+                \n\n
+
+                TreeSet（基于TreeMap实现）：
+                 \n* 1、值唯一性（不能重复）
+                 \n* 2、有序排列
+                 \n添加对象元素时防止重复：1、在TreeSet集合中添加自定义的对象，必须实现Comparable接口，因为添加方法会使用compareTo方法来验证对象的排序位置2、并验证对象是否重复（如果返回结果为0，则表示两个对象重复），返回结果不同（-1小，1大），按照大小进行排序3、按自然顺序排序（从小到大）
+                 \n如果需要在程序中有这样的需求：两个对象的值相同就认为两个对象是同一个对象（前提是使用TreeSet来存储）这时就需要实现对象（类）中的compareTo方法每个属性进行比较（如：比较完年龄还需比较名称……）
+                \n\n
+
+                LinkedHashSet（继承HashSet实现）：
+                 \n* 1、值唯一性（不能重复）
+                 \n* 2、按添加顺序排列
+                 \n添加对象元素时防止重复：1、从HashSet继承而来，确保对象的插入顺序（和HashSet的最大区别）2、由双向链表（适用于插入、删除） + HashMap表实现
+
+                 \n\n
+                 " />
+
+
+
+            <!--<LinearLayout-->
+            <!--android:layout_below="@+id/editText2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<Button-->
+            <!--android:id="@+id/button1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:onClick="addHashSet"-->
+            <!--android:text="添加数据（HashSet）"-->
+            <!--/>-->
+
+            <!--<Button-->
+            <!--android:id="@+id/button2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:onClick="addHashSetObject"-->
+            <!--android:text="添加对象（HashSet）"-->
+            <!--/>-->
+            <!--</LinearLayout>-->
+
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="addTreeSetObject"
+                android:text="添加对象（TreeSet）"
+                android:textSize="12sp"
+                android:layout_below="@+id/button4"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="24dp"/>
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="queryTreeSetSize"
+                android:text="查询数据长度（TreeSet）"
+                android:textSize="12sp"
+                android:layout_below="@+id/button5"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="queryTreeSetObjectSize"
+                android:text="查询对象长度（TreeSet）"
+                android:textSize="12sp"
+                android:layout_below="@+id/button6"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="queryHashSetSize"
+                android:text="查询数据长度（HashSet）"
+                android:textSize="12sp"
+                android:layout_below="@+id/button1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="addTreeSet"
+                android:text="添加数据（TreeSet）"
+                android:textSize="12sp"
+                android:layout_below="@+id/button3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="24dp" />
+
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="addLinkedHashSet"
+                android:text="添加数据（LinkedHashSet）"
+                android:textSize="11sp"
+                android:layout_below="@+id/button7"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="24dp" />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="queryLinkedHashSetSize"
+                android:text="查询数据长度（LinkedHashSet）"
+                android:textSize="10sp"
+                android:layout_below="@+id/button9"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="queryLinkedHashSetObjectSize"
+                android:text="查询对象长度（LinkedHashSet）"
+                android:textSize="10sp"
+                android:layout_below="@+id/button11"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="addHashSet"
+                android:text="添加数据（HashSet）"
+                android:textSize="12sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="48dp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="addHashSetObject"
+                android:text="添加对象（HashSet）"
+                android:textSize="12sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="48dp"/>
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="queryHashSetObjectSize"
+                android:text="查询对象长度（HashSet）"
+                android:textSize="12sp"
+                android:layout_below="@+id/button2"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="addLinkedHashSetObject"
+                android:text="添加对象（LinkedHashSet）"
+                android:textSize="11sp"
+                android:layout_above="@+id/button10"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

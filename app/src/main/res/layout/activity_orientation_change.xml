@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.hhd.java.A_2_08_07$08.ScreenOrientationChange">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="控制台测试： \n  \n 屏幕方向与显示方式 \n 屏幕方向旋转 \n onSaveInstanceState \n onRestoreInstanceState \n onConfigurationChanged \n  \n 这是竖屏状态"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button"
+        android:onClick="changeClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="改变测试参数"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">Java</string>
+    <string name="action_settings">Settings</string>
+
+    <!--Demo-->
+    <string name="Demo_title">Android、Demo</string>
+    <string name="Demo_desc">学作过程的一些Demo（Java或Android）</string>
+
+    <!--*****************************************************************************************-->
+    <string name="GPSTime_title">获取GPS当前时间</string>
+    <string name="GPSTime_desc">目的是通过GPS时间进行对时</string>
+
+    <string name="EarPhone_title">测试耳机接入状态</string>
+    <string name="EarPhone_desc">目的是通过耳机输入数字信号</string>
+
+    <string name="HHDLog_title">HHD专用调试Logger</string>
+    <string name="HHDLog_desc">[美易来]: @HHD@ [ main: MainActivity.java:88 onCreate ] - 括号内容</string>
+
+    <string name="CountDownTimer_title">Android下的倒计时</string>
+    <string name="CountDownTimer_desc">开始、暂停、重新开始</string>
+
+    <string name="Recycler_title">RecyclerView</string>
+    <string name="Recycler_desc">列表、网格、瀑布流布局；点击、长按事件；添加、删除、改变动画</string>
+    <!--*****************************************************************************************-->
+
+    <!--Demo-->
+
+    <!--java-->
+    <string name="singleton_title">ⅠJ06-07 单例设计模式</string>
+    <string name="singleton_desc">饿汉式(推荐)、懒汉式</string>
+
+    <string name="recursion_factorial_title">ⅠJ09-03 递归算法</string>
+    <string name="recursion_factorial_desc">使用递归算法求阶乘</string>
+
+    <string name="linked_list_title">ⅠJ09-04～06 链表数据结构实现</string>
+    <string name="linked_list_desc">递归算法实现链表数据添加、删除、查询...</string>
+
+    <string name="list_title">ⅠJ16-01 List集合</string>
+    <string name="list_desc">ArrayList、Vector、LinkedList常见操作（添加、查询）</string>
+
+    <string name="set_title">ⅠJ16-02～03 Set集合</string>
+    <string name="set_desc">TreeSet、HashSet、LinkedHashSet(继承TreeSet)添加、查询</string>
+
+    <string name="map_title">ⅠJ17-01～03 Map集合</string>
+    <string name="map_desc">HashMap(Hashtable)、TreeMap、LinkedHashMap(继承HashMap)操作</string>
+
+    <string name="thread_title">ⅠJ18-01～03 线程</string>
+    <string name="thread_desc">Thread、Runnable、线程的同步</string>
+
+    <string name="multiple_threads_title">ⅠJ19-01～04 多线程</string>
+    <string name="multiple_threads_desc">死锁、中断、生命周期、线程池</string>
+
+    <string name="socket_title">ⅠJ20-02～05 Socket</string>
+    <string name="socket_desc">Socket（TCP）、Socket（UDP）、URL（下载图片）</string>
+
+    <string name="activity_title">ⅡA08-01～03 Activity概述、状态、生命周期</string>
+    <string name="activity_desc">Activity概述、状态与生命周期概述、状态与生命周期详解</string>
+
+    <string name="putextra_bundle_title">ⅡA08-04～05 传递简单数据、传递自定义对象数据</string>
+    <string name="putextra_bundle_desc">Activity之间传递数据（基本数据类型+自定义对象数据）</string>
+
+    <string name="result_activity_title">ⅡA08-06 处理返回结果</string>
+    <string name="result_activity_desc">跳到第二个Activity带数据返回</string>
+
+    <string name="screen_change_title">ⅡA08-07～08 屏幕方向与显示方式、屏幕方向旋转</string>
+    <string name="screen_change_desc">Activity屏幕方向与显示方式+保存屏幕方向旋转之前Activity的状态</string>
+
+    <string name="bound_service_title">ⅡA10-04～07 BoundService</string>
+    <string name="bound_service_desc">onCreate、onBind、onUnbind、onDestroy、onServiceConnected、IBinder</string>
+
+    <string name="broadcast_receiver_title">ⅡA11-01～04 BroadcastReceiver</string>
+    <string name="broadcast_receiver_desc">默认(Normal)、有序(Ordered)、粘性(Sticky)广播+代码注册广播接收器（优先）[中断:abortBroadcast()、]</string>
+
+    <string name="fragment_title">ⅡA12-01～06 Fragment</string>
+    <string name="fragment_desc">添加到Activity栈（addToBackStack）、传参数（Bundle）、与Activity交互（自定义回调接口）</string>
+
+    <string name="json_title">ⅡA15-07～08 Json</string>
+    <string name="json_desc">JsonReader、Gson-〉解析、生成-〉Json</string>
+
+    <string name="content_provider_title">ⅡA17-01～04 ContentProvider</string>
+    <string name="content_provider_desc">定义匹配器与添加、删除、修改、查询方法与数据类型</string>
+    <!--java-->
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_">ActivityActivity</string>
+    <string name="title_activity_ori">Ori</string>
+    <string name="title_activity_put_extra_bundle">PutExtraBundle</string>
+    <string name="title_activity_result">ResultActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
+

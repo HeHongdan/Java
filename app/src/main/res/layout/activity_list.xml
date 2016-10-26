@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="com.hhd.java.J_1_16_01.ListActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="输入测试数据" />
+
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:onClick="addArrayList"
+                android:text="添加（ArrayList）" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="queryArrayListSize"
+                android:text="查询长度（ArrayList）"
+                android:layout_below="@+id/button1"
+                android:layout_centerHorizontal="true" />
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/button7"
+                android:gravity="center"
+                android:hint="测试结果" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/textView"
+                android:gravity="center"
+                android:text="
+                ArrayList（数组列表）特点：【适合遍历、查询】对象数组的实现，默认大小为10，线程不安全，（适合遍历、查询、(有序)）效率较高，JDK1.2版本\n\n
+                Vector（向量）特点：【线程安全/同步】对象数组的实现，线程安全的（同步），效率较低，JDK1.0版本\n\n
+                LinkedList（链表）特点：【适合删除、添加】使用双向链表实现，适合删除、添加（插入）操作\n\n
+                \n\n
+                " />
+
+
+
+            <!--<Button-->
+            <!--android:id="@+id/button3"-->
+            <!--android:onClick="queryArrayList"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:text="查询元素（ArrayList）"-->
+            <!--android:layout_below="@+id/button2"-->
+            <!--android:layout_alignLeft="@+id/button2"-->
+            <!--android:layout_alignStart="@+id/button2" />-->
+
+
+            <Button
+                android:id="@+id/button4"
+                android:onClick="addVector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="添加（Vector）"
+                android:layout_below="@+id/button2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp" />
+
+            <Button
+                android:id="@+id/button5"
+                android:onClick="queryVectorSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="查询长度（Vector）"
+                android:layout_below="@+id/button4"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/button6"
+                android:onClick="addLinkedList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="添加（LinkedList）"
+                android:layout_below="@+id/button5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"  />
+
+            <Button
+                android:id="@+id/button7"
+                android:onClick="queryLinkedListSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="查询长度（LinkedList）"
+                android:layout_below="@+id/button6"
+                android:layout_centerHorizontal="true"  />
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
