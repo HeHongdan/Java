@@ -1,7 +1,7 @@
 # Android 开源项目分类汇总_HHD学作
 ---
 
-##=第1=
+##=第1_1=
 收集Android开发中优秀的开源组件库
 ###目录 Catalogue
 - [列表List](https://github.com/XXApple/AndroidLibs/tree/master/%E5%88%97%E8%A1%A8List) 
@@ -34,7 +34,33 @@ Thanks to :
 
 
 ---
-##=第2=
+
+
+##=第1_2=
+收录优秀的Android相关的资源包括但不限于：  
+
+1. 文章(最佳,授人以鱼不如授人以渔)
+2. 优秀的开源APP(实践)
+3. Demo(辅之)  
+
+## 目录  
+	注意：暂时按字母顺序排列
+
+- [Architecture](./Architecture.md)  
+- [Binder](./Binder.md)  
+- [插件化](./Plugins.md)  
+- [Dagger2](./Dagger2.md)
+- [DataBinding](./DataBinding.md)
+- [EventBus(事件总线)](./EventBus.md)
+- [Fragment](./Fragment.md)
+- [RxAndroid&RxJava](./RxAndroid.md)  
+- [UI（会有更细的整理）](./AndroidUI.md)  
+
+## Contributors
+[YumikoAzu](https://github.com/YumikoAzu)
+
+
+##=第2=https://github.com/AlanCheen/Android-Resources
 ## 目前包括：
 >[Android 开源项目第一篇——个性化控件(View)篇](https://github.com/Trinea/android-open-project#%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86-%E4%B8%AA%E6%80%A7%E5%8C%96%E6%8E%A7%E4%BB%B6view)  
 *&nbsp;&nbsp;包括[ListView](https://github.com/Trinea/android-open-project#%E4%B8%80listview)、[ActionBar](https://github.com/Trinea/android-open-project#%E4%BA%8Cactionbar)、[Menu](https://github.com/Trinea/android-open-project#%E4%B8%89menu)、[ViewPager](https://github.com/Trinea/android-open-project#%E5%9B%9Bviewpager-gallery)、[Gallery](https://github.com/Trinea/android-open-project#%E5%9B%9Bviewpager-gallery)、[GridView](https://github.com/Trinea/android-open-project#%E4%BA%94gridview)、[ImageView](https://github.com/Trinea/android-open-project#%E5%85%ADimageview)、[ProgressBar](https://github.com/Trinea/android-open-project#%E4%B8%83progressbar)、[TextView](https://github.com/Trinea/android-open-project#%E5%85%ABtextview)、[ScrollView](https://github.com/Trinea/android-open-project#%E4%B9%9Dscrollview)、[TimeView](https://github.com/Trinea/android-open-project#%E5%8D%81timeview)、[TipView](https://github.com/Trinea/android-open-project#%E5%8D%81%E4%B8%80tipview)、[FlipView](https://github.com/Trinea/android-open-project#%E5%8D%81%E4%BA%8Cflipview)、[ColorPickView](https://github.com/Trinea/android-open-project#%E5%8D%81%E4%B8%89colorpickview)、[GraphView](https://github.com/Trinea/android-open-project#%E5%8D%81%E5%9B%9Bgraphview)、[UI Style](https://github.com/Trinea/android-open-project#%E5%8D%81%E4%BA%94ui-style)、[其他](https://github.com/Trinea/android-open-project#十六其他)*  
