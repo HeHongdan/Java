@@ -36,7 +36,7 @@ Thanks to :
 ---
 
 
-##=第1_2=
+##=第1_2=(https://github.com/AlanCheen/Android-Resources) 
 收录优秀的Android相关的资源包括但不限于：  
 
 1. 文章(最佳,授人以鱼不如授人以渔)
@@ -46,15 +46,15 @@ Thanks to :
 ## 目录  
 	注意：暂时按字母顺序排列
 
-- [Architecture](./Architecture.md)  
-- [Binder](./Binder.md)  
-- [插件化](./Plugins.md)  
-- [Dagger2](./Dagger2.md)
-- [DataBinding](./DataBinding.md)
-- [EventBus(事件总线)](./EventBus.md)
-- [Fragment](./Fragment.md)
-- [RxAndroid&RxJava](./RxAndroid.md)  
-- [UI（会有更细的整理）](./AndroidUI.md)  
+- [Architecture](https://github.com/AlanCheen/Android-Resources/blob/master/Architecture.md)  
+- [Binder](https://github.com/AlanCheen/Android-Resources/blob/master/Binder.md)  
+- [插件化](https://github.com/AlanCheen/Android-Resources/blob/master/Plugins.md)  
+- [Dagger2](https://github.com/AlanCheen/Android-Resources/blob/master/Dagger2.md)
+- [DataBinding](https://github.com/AlanCheen/Android-Resources/blob/master/DataBinding.md)
+- [EventBus(事件总线)](https://github.com/AlanCheen/Android-Resources/blob/master/EventBus.md)
+- [Fragment](https://github.com/AlanCheen/Android-Resources/blob/master/Fragment.md)
+- [RxAndroid&RxJava](https://github.com/AlanCheen/Android-Resources/blob/master/RxAndroid.md)  
+- [UI（会有更细的整理）]https://github.com/AlanCheen/Android-Resources/blob/master/AndroidUI.md)  
 
 ## Contributors
 [YumikoAzu](https://github.com/YumikoAzu)
