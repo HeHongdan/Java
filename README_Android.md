@@ -1,7 +1,7 @@
 # Android 开源项目分类汇总_HHD学作
 ---
 
-##第1_1(https://github.com/XXApple/AndroidLibs)
+##第=第1=(https://github.com/XXApple/AndroidLibs)
 收集Android开发中优秀的开源组件库
 ###目录 Catalogue
 - [列表List](https://github.com/XXApple/AndroidLibs/tree/master/%E5%88%97%E8%A1%A8List) 
@@ -31,12 +31,11 @@ Thanks to :
 - https://github.com/wasabeef/awesome-android-ui
 - http://www.jcodecraeer.com/
 
-
-
 ---
 
 
-##=第1_2=(https://github.com/AlanCheen/Android-Resources) 
+
+##=第2=(https://github.com/AlanCheen/Android-Resources) 
 收录优秀的Android相关的资源包括但不限于：  
 
 1. 文章(最佳,授人以鱼不如授人以渔)
@@ -59,9 +58,12 @@ Thanks to :
 ## Contributors
 [YumikoAzu](https://github.com/YumikoAzu)
 
+---
 
-##=第2=https://github.com/AlanCheen/Android-Resources
-## 目前包括：
+
+
+##=第3=(https://github.com/sevenli777/android-open-project)
+### 目前包括：
 >[Android 开源项目第一篇——个性化控件(View)篇](https://github.com/Trinea/android-open-project#%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86-%E4%B8%AA%E6%80%A7%E5%8C%96%E6%8E%A7%E4%BB%B6view)  
 *&nbsp;&nbsp;包括[ListView](https://github.com/Trinea/android-open-project#%E4%B8%80listview)、[ActionBar](https://github.com/Trinea/android-open-project#%E4%BA%8Cactionbar)、[Menu](https://github.com/Trinea/android-open-project#%E4%B8%89menu)、[ViewPager](https://github.com/Trinea/android-open-project#%E5%9B%9Bviewpager-gallery)、[Gallery](https://github.com/Trinea/android-open-project#%E5%9B%9Bviewpager-gallery)、[GridView](https://github.com/Trinea/android-open-project#%E4%BA%94gridview)、[ImageView](https://github.com/Trinea/android-open-project#%E5%85%ADimageview)、[ProgressBar](https://github.com/Trinea/android-open-project#%E4%B8%83progressbar)、[TextView](https://github.com/Trinea/android-open-project#%E5%85%ABtextview)、[ScrollView](https://github.com/Trinea/android-open-project#%E4%B9%9Dscrollview)、[TimeView](https://github.com/Trinea/android-open-project#%E5%8D%81timeview)、[TipView](https://github.com/Trinea/android-open-project#%E5%8D%81%E4%B8%80tipview)、[FlipView](https://github.com/Trinea/android-open-project#%E5%8D%81%E4%BA%8Cflipview)、[ColorPickView](https://github.com/Trinea/android-open-project#%E5%8D%81%E4%B8%89colorpickview)、[GraphView](https://github.com/Trinea/android-open-project#%E5%8D%81%E5%9B%9Bgraphview)、[UI Style](https://github.com/Trinea/android-open-project#%E5%8D%81%E4%BA%94ui-style)、[其他](https://github.com/Trinea/android-open-project#十六其他)*  
 [Android 开源项目第二篇——工具库篇](https://github.com/Trinea/android-open-project#%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86-%E5%B7%A5%E5%85%B7%E5%BA%93)  
@@ -73,7 +75,7 @@ Thanks to :
 [Android 开源项目第五篇——优秀个人和团体篇](https://github.com/Trinea/android-open-project#%E7%AC%AC%E4%BA%94%E9%83%A8%E5%88%86)  
 *&nbsp;&nbsp;乐于分享并且有一些很不错的开源项目的[个人](https://github.com/Trinea/android-open-project#一个人)和[组织](https://github.com/Trinea/android-open-project#二组织)，包括 JakeWharton、Chris Banes、Koushik Dutta 等大牛*  
 
-## 第一部分 个性化控件(View)
+### 第一部分 个性化控件(View)
 主要介绍那些不错个性化的 View，包括 ListView、ActionBar、Menu、ViewPager、Gallery、GridView、ImageView、ProgressBar、TextView、ScrollView、TimeView、TipView、FlipView、ColorPickView、GraphView、UI Style 等等。  
 
 #### 一、ListView
@@ -1628,7 +1630,7 @@ demo地址：https://github.com/wenmingvs/NotifyUtil#notifydemo
 一个风力玫瑰图的 View 组件，项目地址：![https://github.com/timqi/WindRoseDiagramView/](https://github.com/timqi/WindRoseDiagramView/)
 ![效果图](https://github.com/timqi/WindRoseDiagramView/raw/master/art/WindRoseDiagram.gif) 
 
-## 第二部分 工具库
+### 第二部分 工具库
 主要包括那些不错的开发库，包括依赖注入框架、图片缓存、网络请求、数据库 ORM 建模、Android 公共库、Android 高版本向低版本兼容、多媒体相关及其他。  
 
 #### 一、依赖注入 DI
@@ -2511,7 +2513,7 @@ demo地址：[apk地址](https://github.com/lfkdsk/JustWeTools/blob/master/demo/
 项目地址：[GHDownload](https://github.com/guanchao/GHDownload)  
 
 
-## 第三部分 优秀项目
+### 第三部分 优秀项目
 主要介绍那些 Android 还不错的完整项目，目前包含的项目主要依据是项目有意思或项目分层规范比较好。  
 
 #### 一、系统及平台
@@ -2604,7 +2606,7 @@ The Google I/O 2014 Android App
 项目地址：https://github.com/google/iosched  
 APK 地址：https://play.google.com/store/apps/details?id=com.google.samples.apps.iosched  
 
-## 第四部分 开发工具及测试工具
+### 第四部分 开发工具及测试工具
 主要介绍和 Android 开发工具和测试工具相关的开源项目。  
 
 #### 一、开发效率工具
@@ -2909,7 +2911,7 @@ Android 内存泄露检测工具，集成方便，出现泄露后报告直观
 BlockCanary是一个Android平台的一个非侵入式的性能监控组件，应用只需要实现一个抽象类，提供一些该组件需要的上下文环境，就可以在平时使用应用的时候检测主线程上的各种卡慢问题，并通过组件提供的各种信息分析出原因并进行修复。  
 项目地址: https://github.com/moduth/blockcanary  
 
-## 第五部分  
+### 第五部分  
 主要介绍那些乐于分享并且有一些很不错的开源项目的个人和组织。Follow 大神，深挖大神的项目和 following，你会发现很多。  
 
 #### 一、个人  
@@ -2992,10 +2994,11 @@ Github 地址：https://github.com/inmite
 ####<a href="http://a.codekk.com" target="_blank">Android 开源项目源码解析(Volley、UIL、Dagger、EventBus、插件化库等分析)</a>  
 ####<a href="http://j.codekk.com" target="_blank">Android 职位内部推荐(阿里、腾讯、百度、京东、滴滴、美团、58、华为、网易、魅族等)</a>  
 ####<a href="http://p.codekk.com" target="_blank">强大的 Android 开源项目搜索站</a>
+
 ---
 
 
-##=第3=
+##=第4=(https://github.com/dreamlivemeng/TimLiu-Android)
 TimLiu-Android自己总结的Android开源项目及库。 github排名 [https://github.com/trending](https://github.com/trending),github搜索：[https://github.com/search](https://github.com/search)
 
 ###  目录
