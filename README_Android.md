@@ -55,7 +55,7 @@ Thanks to :
 - [RxAndroid&RxJava](https://github.com/AlanCheen/Android-Resources/blob/master/RxAndroid.md)  
 - [UI（会有更细的整理）]https://github.com/AlanCheen/Android-Resources/blob/master/AndroidUI.md)  
 
-## Contributors
+## 贡献者
 [YumikoAzu](https://github.com/YumikoAzu)
 
 ---
