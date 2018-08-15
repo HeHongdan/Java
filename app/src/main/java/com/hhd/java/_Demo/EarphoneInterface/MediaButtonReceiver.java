@@ -1,11 +1,10 @@
-package com.hhd.java._Deme.EarphoneInterface;
+package com.hhd.java._Demo.EarphoneInterface;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 import android.view.KeyEvent;
-import android.widget.Toast;
 
 /**
  * Created by HHD on 2016/9/18.

@@ -1,4 +1,4 @@
-package com.hhd.java._Deme;
+package com.hhd.java._Demo;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -14,11 +14,12 @@ import android.widget.TextView;
 
 
 import com.hhd.java.R;
-import com.hhd.java._Deme.CountDownTimer.CountDownTimerActivity;
-import com.hhd.java._Deme.EarphoneInterface.EarphoneInterfaceActivity;
-import com.hhd.java._Deme.GPSTime.GPSTimeActivity;
-import com.hhd.java._Deme.HHDLogger.HHDLogActivity;
-import com.hhd.java._Deme.Recycler.RecyclerViewActivity;
+import com.hhd.java._Demo.CountDownTimer.CountDownTimerActivity;
+import com.hhd.java._Demo.EarphoneInterface.EarphoneInterfaceActivity;
+import com.hhd.java._Demo.GPSTime.GPSTimeActivity;
+import com.hhd.java._Demo.HHDLogger.HHDLogActivity;
+import com.hhd.java._Demo.Recycler.RecyclerViewActivity;
+import com.hhd.java._Demo.View.ViewActivity;
 
 public class DemoActivity extends Activity implements OnItemClickListener {
 
@@ -62,6 +63,7 @@ public class DemoActivity extends Activity implements OnItemClickListener {
             new Demo(R.string.HHDLog_title, R.string.HHDLog_desc, HHDLogActivity.class),
             new Demo(R.string.CountDownTimer_title, R.string.CountDownTimer_desc, CountDownTimerActivity.class),
             new Demo(R.string.Recycler_title, R.string.Recycler_desc, RecyclerViewActivity.class),
+            new Demo(R.string.CustomView_title, R.string.CustomView_desc, ViewActivity.class),
     };
 
     @Override

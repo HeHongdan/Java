@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 第一个自定义视图的属性 -->
+    <attr name="titleText" format="string"/>
+    <attr name="titleTextColor" format="color"/>
+    <attr name="titleTextSize" format="dimension"/>
+    
+    <attr name="image" format="reference"/>
+    <attr name="imageScaleType">
+        <enum name="fillXY" value="0"/>
+        <enum name="center" value="1"/>
+    </attr>
+
+    <attr name="firstColor" format="color" />
+    <attr name="secondColor" format="color" />
+    <attr name="circleWidth" format="dimension" />
+    <attr name="speed" format="integer" />
+
+    <attr name="dotCount" format="integer" />
+    <attr name="splitSize" format="integer" />
+    <attr name="bg" format="reference"></attr>
+
+    <!-- 自定义文本 -->
+    <declare-styleable name="CustomTextView">
+        <!-- 文本内容 -->
+        <attr name="titleText"/>
+        <!-- 文本颜色 -->
+        <attr name="titleTextColor"/>
+        <!-- 文本大小 -->
+        <attr name="titleTextSize"/>
+    </declare-styleable>
+    
+    <!-- 自定义富文本 -->
+    <declare-styleable name="CustomImageView">
+        <!-- 文本内容 -->
+        <attr name="titleText"/>
+        <!-- 文本颜色 -->
+        <attr name="titleTextColor"/>
+        <!-- 文本大小 -->
+        <attr name="titleTextSize"/>
+        <!-- 图片 -->
+        <attr name="image"/>
+        <!-- 图片显示样式 -->
+        <attr name="imageScaleType"/>
+    </declare-styleable>
+
+    <!-- 圆圈进度条 -->
+    <declare-styleable name="CustomProgressBar">
+        <!-- 第一颜色 -->
+        <attr name="firstColor" />
+        <!-- 第二颜色 -->
+        <attr name="secondColor" />
+        <!-- 圆环宽度 -->
+        <attr name="circleWidth" />
+        <!-- 进度速度 -->
+        <attr name="speed"/>
+    </declare-styleable>
+
+    <!-- 视频音量调控 -->
+    <declare-styleable name="CustomVolumControlBar">
+        <!-- 第一颜色 -->
+        <attr name="firstColor" />
+        <!-- 第二颜色 -->
+        <attr name="secondColor" />
+        <!-- 圆环宽度 -->
+        <attr name="circleWidth" />
+        <!-- 点块 -->
+        <attr name="dotCount" />
+        <!-- 间隔度数 -->
+        <attr name="splitSize" />
+        <!-- 中间背景图片 -->
+        <attr name="bg" />
+    </declare-styleable>
+
+
+</resources>

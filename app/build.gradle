@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
+    compileSdkVersion 28
     buildToolsVersion "25.0.0"
 
     defaultConfig {
@@ -26,6 +26,7 @@ dependencies {
     compile 'com.android.support:design:25.+'
     compile 'com.android.support:support-v4:25.+'
     compile 'com.android.support:recyclerview-v7:25.+'
+    compile 'com.android.support.constraint:constraint-layout:1.1.2'
     testCompile 'junit:junit:4.12'
 //    compile project(':libraries:vitamio')
 }

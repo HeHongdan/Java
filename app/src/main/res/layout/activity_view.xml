@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:CustomView="http://schemas.android.com/apk/res/com.hhd.java"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="._Demo.View.ViewActivity">
+
+    <Button
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:text="文本"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="16dp"/>
+
+    <Button
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_marginStart="1dp"
+        android:text="富文本"
+        app:layout_constraintStart_toEndOf="@+id/view1"
+        tools:layout_editor_absoluteY="16dp"/>
+
+    <Button
+        android:id="@+id/view3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_marginStart="1dp"
+        android:text="圆圈进度"
+        app:layout_constraintStart_toEndOf="@+id/view2"
+        tools:layout_editor_absoluteY="16dp"/>
+
+    <Button
+        android:id="@+id/view4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginStart="1dp"
+        android:text="圆圈指示"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/view3"
+        tools:layout_editor_absoluteY="16dp"/>
+
+    <!-- 文本 -->
+    <com.hhd.java._Demo.View.custom.CustomTextView
+        android:id="@+id/custom_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        CustomView:titleText="1234"
+        CustomView:titleTextColor="#ff0000"
+        CustomView:titleTextSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"
+        />
+
+
+    <!-- 富文本1 -->
+    <com.hhd.java._Demo.View.custom.CustomImageView
+        android:id="@+id/customImageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:padding="10dp"
+        CustomView:image="@mipmap/image"
+        CustomView:imageScaleType="center"
+        CustomView:titleText="hello andorid ! "
+        CustomView:titleTextColor="#ff0000"
+        CustomView:titleTextSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/customImageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"/>
+
+    <!-- 富文本2 -->
+    <com.hhd.java._Demo.View.custom.CustomImageView
+        android:id="@+id/customImageView2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:padding="10dp"
+        CustomView:image="@mipmap/image"
+        CustomView:imageScaleType="center"
+        CustomView:titleText="helloworldwelcome"
+        CustomView:titleTextColor="#00ff00"
+        CustomView:titleTextSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/customImageView1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"/>
+
+    <!-- 富文本3 -->
+    <com.hhd.java._Demo.View.custom.CustomImageView
+        android:id="@+id/customImageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:padding="10dp"
+        CustomView:image="@mipmap/image_big"
+        CustomView:imageScaleType="center"
+        CustomView:titleText="居中"
+        CustomView:titleTextColor="#ff0000"
+        app:layout_constraintBottom_toTopOf="@+id/custom_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"/>
+
+    <!-- 圆圈进度条 -->
+    <com.hhd.java._Demo.View.custom.CustomProgressBar
+        android:id="@+id/customProgressBar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        CustomView:circleWidth="20dp"
+        CustomView:firstColor="@color/colorPrimary"
+        CustomView:secondColor="@color/colorAccent"
+        CustomView:speed="20"
+        app:layout_constraintBottom_toBottomOf="@+id/customImageView1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"/>
+
+    <!-- 显示圆圈指示 -->
+    <com.hhd.java._Demo.View.custom.CustomVolumControlBar
+        android:id="@+id/customVolumControlBar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        CustomView:bg="@mipmap/volum"
+        CustomView:circleWidth="8dp"
+        CustomView:dotCount="8"
+        CustomView:firstColor="@color/colorPrimaryDark"
+        CustomView:secondColor="@color/colorAccent"
+        CustomView:splitSize="20"
+        app:layout_constraintBottom_toTopOf="@+id/customImageView1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"/>
+
+
+</android.support.constraint.ConstraintLayout>

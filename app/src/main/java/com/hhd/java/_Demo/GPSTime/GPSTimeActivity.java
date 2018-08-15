@@ -1,4 +1,4 @@
-package com.hhd.java._Deme.GPSTime;
+package com.hhd.java._Demo.GPSTime;
 
 import android.app.Activity;
 import android.content.Context;
@@ -11,7 +11,6 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.location.LocationProvider;
 import android.provider.Settings;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.EditText;

@@ -1,4 +1,4 @@
-package com.hhd.java._Deme.CountDownTimer;
+package com.hhd.java._Demo.CountDownTimer;
 
 /*
  * Copyright (C) 2008 The Android Open Source Project

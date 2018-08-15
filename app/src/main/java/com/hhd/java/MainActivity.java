@@ -31,7 +31,7 @@ import com.hhd.java.J_1_17_0103.MapActivity;
 import com.hhd.java.J_1_18_0103.ThreadActivity;
 import com.hhd.java.J_1_19_0104.MultipleThreadsActivity;
 import com.hhd.java.J_1_20_0205.EchoClientActivity;
-import com.hhd.java._Deme.DemoActivity;
+import com.hhd.java._Demo.DemoActivity;
 
 
 public class MainActivity extends Activity implements OnItemClickListener {

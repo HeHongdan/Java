@@ -21,6 +21,9 @@
 
     <string name="Recycler_title">RecyclerView</string>
     <string name="Recycler_desc">列表、网格、瀑布流布局；点击、长按事件；添加、删除、改变动画</string>
+
+    <string name="CustomView_title">自定义视图</string>
+    <string name="CustomView_desc">文本、富文本、圆圈进度、圆圈指示</string>
     <!--*****************************************************************************************-->
 
     <!--Demo-->

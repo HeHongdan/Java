@@ -1,4 +1,4 @@
-package com.hhd.java._Deme._Git;
+package com.hhd.java._Demo._Git;
 
 /**
  * Created by HHD on 2016/10/26.

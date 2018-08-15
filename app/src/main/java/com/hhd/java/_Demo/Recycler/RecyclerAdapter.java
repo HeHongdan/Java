@@ -1,4 +1,4 @@
-package com.hhd.java._Deme.Recycler;
+package com.hhd.java._Demo.Recycler;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -175,10 +175,13 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
      *
      * @param position 需要删除对应的下标
      */
-    public void remove(int position) {//删除item
+    public void remove(int position) {
+        //删除item
         list.remove(position);
-//        notifyDataSetChanged();//不要使用改变数据（因为动画不会生效）
-        notifyItemRemoved(position);//带动画
+        //不要使用改变数据（因为动画不会生效）
+//        notifyDataSetChanged();
+        //带动画
+        notifyItemRemoved(position);
     }
 
     /**
@@ -197,8 +200,10 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
      * @param data
      */
     public void change(int position,String data){
-        list.remove(position);//先删除之前数据
-        list.add(position, data);//再添加改变的数据
+        //先删除之前数据
+        list.remove(position);
+        //再添加改变的数据
+        list.add(position, data);
         notifyItemChanged(position);
     }
 

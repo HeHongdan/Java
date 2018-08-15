@@ -1,4 +1,4 @@
-package com.hhd.java._Deme.EarphoneInterface;
+package com.hhd.java._Demo.EarphoneInterface;
 
 import android.app.Activity;
 import android.content.BroadcastReceiver;
@@ -8,7 +8,6 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.media.AudioManager;
 import android.media.session.MediaSession;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
 

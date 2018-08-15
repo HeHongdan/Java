@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.hhd.java._Deme.Recycler;
+package com.hhd.java._Demo.Recycler;
 
 import android.support.annotation.NonNull;
 import android.support.v4.animation.AnimatorCompatHelper;

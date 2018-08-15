@@ -1,4 +1,4 @@
-package com.hhd.java._Deme.CountDownTimer;
+package com.hhd.java._Demo.CountDownTimer;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -8,7 +8,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.hhd.java.R;
-import com.hhd.java._Deme.HHDLogger.MyLogger;
+import com.hhd.java._Demo.HHDLogger.MyLogger;
 
 public class CountDownTimerActivity extends Activity {
 

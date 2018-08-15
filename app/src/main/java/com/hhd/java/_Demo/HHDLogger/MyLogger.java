@@ -1,4 +1,4 @@
-package com.hhd.java._Deme.HHDLogger;
+package com.hhd.java._Demo.HHDLogger;
 
 import android.util.Log;
 
